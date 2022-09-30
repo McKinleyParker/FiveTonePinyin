@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Raleway:wght@200&display=swap");
+
+/* need this to make sure the whole app doesn't have a white margin around it */
+#root {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  width: 100%;
+  background-image: url("https://c.cidianwang.com/file/20174/25_2017040915024197.jpg");
+  background-size: auto 100%;
+  background-repeat: repeat;
+}
+
+.main {
+  background-image: url("https://i.ibb.co/QXTtGkj/white-cloud-fixed.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Barlow";
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: minmax(20px, auto);
+  column-gap: 3px;
+  row-gap: 5px;
+}
+
+.optionButton {
+  display: box-flex;
+  padding: 0.1rem;
+  margin: 0.04rem;
+  font-size: 2.2rem;
+  font-family: "ZCOOL XiaoWei";
+  color: goldenrod;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: darkslategray;
+  height: 5rem;
+  width: 3rem;
+  text-justify: center;
+}
+
+.inputBar {
+  font-family: "raleway";
+  width: 200px;
+  border-bottom-right-radius: 7px;
+}
+
+.controlButton {
+  font-family: "raleway";
+  background-color: ghostwhite;
+  border-top-left-radius: 7px;
+}
+
+.title {
+  color: ghostwhite;
+  padding-top: 0.3vh;
+  padding-bottom: 0.2vh;
+  font-size: 6vw;
+  grid-column: 1/13;
+  text-align: center;
+  grid-row: 1/2;
+}
+
+h1 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.inputScroll {
+  color: ghostwhite;
+  grid-column: 2/8;
+  text-align: center;
+  grid-row: 2/16;
+  border-color: ghostwhite;
+  border-top: solid;
+  border-bottom: solid;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.typedTextScroll {
+  font-family: "ZCOOL XiaoWei";
+  color: ghostwhite;
+  font-size: 4vw;
+  text-shadow: 2px 2px 3px grey;
+  border-color: ghostwhite;
+  border-top: solid;
+  border-bottom: solid;
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-column: 9/12;
+  text-align: center;
+  grid-row: 2/4;
+}
+
+.optionWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  grid-column: 2/8;
+  text-align: center;
+  grid-row: 6/4;
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .title {
+    font-size: 60px;
+  }
+  .inputScroll {
+    grid-row: 2/4;
+  }
+  .optionWrapper {
+    grid-row: 3/4;
+  }
+}
+
+footer {
+  height: 40px;
+  grid-row: 4;
+}
+@media screen and (min-width: 1250px) {
+  .optionButton {
+    width: 64px;
+    height: 96px;
+    font-size: 48px;
+  }
+
+  .typedTextScroll {
+    grid-row: 2/4;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 30px;
+  }
+}
+
+.instructions {
+  margin: 0px 50px 10px 50px;
+  background: rgba(0, 0, 0, 0.6);
+}

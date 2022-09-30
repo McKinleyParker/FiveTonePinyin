@@ -1,0 +1,20 @@
+Landing Page
+  - Content
+
+Footer
+  - Copyrite & Most Recent Update
+  - Responsive Scaling
+
+Nav
+  - Responsive Design
+
+About
+  - All Content
+  - Link to Free type
+  - Link to test
+
+Test 
+  - Build Test module
+
+Dictionary
+  - Clean dictionary to only include more often used characters
